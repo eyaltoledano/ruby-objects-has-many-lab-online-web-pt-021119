@@ -10,10 +10,10 @@ class Artist
   end
 
   def add_song(song)
+    binding.pry
     the_song = song
     the_song.artist = self
     @songs << the_song
-    binding.pry
   end
 
   def songs

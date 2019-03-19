@@ -7,7 +7,11 @@ class Author
     @posts = []
   end
 
-  def add_post
+  def add_post(post)
+    the_post = post
+    the_post.author = self
+    @posts << the_post
+    the_post
   end
 
   def add_post_by_title

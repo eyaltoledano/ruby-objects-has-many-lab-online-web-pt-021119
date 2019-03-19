@@ -14,6 +14,10 @@ class Author
     the_post
   end
 
+  def posts
+    @posts
+  end
+
   def add_post_by_title
   end
 
